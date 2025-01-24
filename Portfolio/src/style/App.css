@@ -6,10 +6,65 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.nav-bar {
+  width: 100%;
 }
 
 .nav-bar ul{
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar ul li{
+  display: inline;
+  float: left;
+}
+
+.skills {
+  width: 60%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: rgb(138, 138, 138);
+}
+
+.skills h2 {
+  margin: 0;
+}
+
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px;
+}
+
+.skill-block {
+  padding: 1px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center;
+  min-width: 100px;
+}
+
+.experience {
+  width: 60%;
+  margin: 10px;
+  border-radius: 25px;
+  background-color: rgb(138, 138, 138);
+}
+
+.projects {
+  width: 60%;
+  margin: 10px;
+  border-radius: 25px;
+  background-color: rgb(138, 138, 138);
 }
