@@ -27,7 +27,7 @@
 }
 
 .skills {
-  width: 60%;
+  width: 70%;
   margin: 10px;
   padding: 10px;
   border-radius: 25px;
@@ -56,15 +56,36 @@
 }
 
 .experience {
-  width: 60%;
+  width: 70%;
   margin: 10px;
   border-radius: 25px;
   background-color: rgb(138, 138, 138);
 }
 
 .projects {
-  width: 60%;
+  width: 70%;
   margin: 10px;
   border-radius: 25px;
   background-color: rgb(138, 138, 138);
+}
+
+.project-block {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.project-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: left;
+}
+
+.project-info img {
+  max-width: 50%;
+  height: auto;
+  object-fit: contain;
+  border: 3px white solid;
+  border-radius: 30px 5px 30px 5px;
 }
