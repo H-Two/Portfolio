@@ -6,9 +6,9 @@ function App() {
       <div className='nav-bar'>
         <ul>
           <li><a>Home</a></li>
-          <li><a>Projects</a></li>
+          <li><a href="#project-section" target="_self">Projects</a></li>
           <li><a href="https://www.linkedin.com/in/hai-hoang-do-b65b18339/" target="_blank">LinkedIn</a></li>
-          <li><a>CV</a></li>
+          <li><a href="./src/assets/Resume.pdf" target="_blank">CV</a></li>
         </ul>
       </div>
       <section className='info'>
@@ -46,10 +46,12 @@ function App() {
         <h4>Computer Service Technician</h4>
         <h4>Canada Computers</h4>
         <ul>
-          <li>Build, test, and maintain computer systems and related products</li>
+          <li>Build, maintain, and conduct repairs computer systems and related products</li>
+          <li>Install and configure software, hardware, drivers and BIOS on machines</li>
+          <li>Troubleshoot and locate root cause of problems in order to provide technical support</li>
         </ul>
       </section>
-      <section className='projects'>
+      <section className='projects' id='project-section'>
         <h2>PROJECTS</h2>
         <div className='project-block'>
           <h4>Office Hour Scheduler</h4>

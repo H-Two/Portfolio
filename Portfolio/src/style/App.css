@@ -1,3 +1,10 @@
+body {
+  font-family: "Aldrich", serif;
+  font-optical-sizing: auto;
+  color: rgb(223, 223, 223);
+  background: linear-gradient(45deg, rgb(105, 0, 0), rgb(0, 0, 151));
+}
+
 #root {
   max-width: 1280px;
   height: auto;
@@ -29,44 +36,48 @@
 .skills {
   width: 70%;
   margin: 10px;
-  padding: 10px;
+  padding: 0 0 5px 0;
   border-radius: 25px;
-  background-color: rgb(138, 138, 138);
-}
-
-.skills h2 {
-  margin: 0;
+  background-color: rgb(16, 39, 143);
+  border: 3px solid rgb(0, 110, 255);
 }
 
 .skill-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   margin: 10px;
 }
 
 .skill-block {
-  padding: 1px;
-  border: 1px solid #ccc;
+  padding: 2px;
   border-radius: 8px;
-  background-color: #f9f9f9;
+  background-color: #3351fd;
   text-align: center;
-  min-width: 100px;
+  min-width: 90px;
 }
 
 .experience {
   width: 70%;
   margin: 10px;
+  padding: 0 0 5px 0;
   border-radius: 25px;
-  background-color: rgb(138, 138, 138);
+  background-color: rgb(16, 39, 143);
+  border: 3px solid rgb(0, 110, 255);
+}
+
+.experience li {
+  list-style-type: none;
 }
 
 .projects {
   width: 70%;
   margin: 10px;
+  padding: 0 0 5px 0;
   border-radius: 25px;
-  background-color: rgb(138, 138, 138);
+  background-color: rgb(16, 39, 143);
+  border: 2px solid rgb(0, 110, 255);
 }
 
 .project-block {
@@ -86,6 +97,6 @@
   max-width: 50%;
   height: auto;
   object-fit: contain;
-  border: 3px white solid;
+  border: 3px rgb(107, 167, 247) solid;
   border-radius: 30px 5px 30px 5px;
 }
