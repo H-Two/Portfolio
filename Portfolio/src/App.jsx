@@ -8,7 +8,7 @@ function App() {
           <li><a>Home</a></li>
           <li><a href="#project-section" target="_self">Projects</a></li>
           <li><a href="https://www.linkedin.com/in/hai-hoang-do-b65b18339/" target="_blank">LinkedIn</a></li>
-          <li><a href="./src/assets/Resume.pdf" target="_blank">CV</a></li>
+          <li><a href="/Resume.pdf" target="_blank">CV</a></li>
         </ul>
       </div>
       <section className='info'>
@@ -62,7 +62,7 @@ function App() {
               <li>Communication platform for managing appointments and reports</li>
               <li>Provides user authentication for different user type</li>
             </ul>
-            <img src='./src/assets/scheduler.svg' alt='Scheduler'/>
+            <img src='/scheduler.svg' alt='Scheduler'/>
           </div>
         </div>
         <div className='project-block'>
@@ -74,7 +74,7 @@ function App() {
               <li>Displays CO2 emission and natural disasters datasets over maps and graphs</li>
               <li>Provides REST API for data retrieval hosted with Express.js</li>
             </ul>
-            <img src='./src/assets/emission.svg' alt='Scheduler'/>
+            <img src='/emission.svg' alt='Scheduler'/>
           </div>
         </div>
       </section>
