@@ -28,10 +28,25 @@ function App() {
             <h3>React</h3>
           </div>
           <div className='skill-block'>
+            <h3>Node.js</h3>
+          </div>
+          <div className='skill-block'>
+            <h3>Express</h3>
+          </div>
+          <div className='skill-block'>
             <h3>C#</h3>
           </div>
           <div className='skill-block'>
+            <h3>Entity</h3>
+          </div>
+          <div className='skill-block'>
+            <h3>Avalonia</h3>
+          </div>
+          <div className='skill-block'>
             <h3>Python</h3>
+          </div>
+          <div className='skill-block'>
+            <h3>Flask</h3>
           </div>
           <div className='skill-block'>
             <h3>Java</h3>

@@ -33,7 +33,7 @@ body {
   float: left;
 }
 
-.skills {
+.skills, .projects, .experience{
   width: 70%;
   margin: 10px;
   padding: 0 0 5px 0;
@@ -58,26 +58,8 @@ body {
   min-width: 90px;
 }
 
-.experience {
-  width: 70%;
-  margin: 10px;
-  padding: 0 0 5px 0;
-  border-radius: 25px;
-  background-color: rgb(16, 39, 143);
-  border: 3px solid rgb(0, 110, 255);
-}
-
 .experience li {
   list-style-type: none;
-}
-
-.projects {
-  width: 70%;
-  margin: 10px;
-  padding: 0 0 5px 0;
-  border-radius: 25px;
-  background-color: rgb(16, 39, 143);
-  border: 2px solid rgb(0, 110, 255);
 }
 
 .project-block {
