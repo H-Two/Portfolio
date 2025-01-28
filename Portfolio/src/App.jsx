@@ -5,13 +5,13 @@ function App() {
     <>
       <div className='nav-bar'>
         <ul>
-          <li><a>Home</a></li>
+          <li><a href="#info-section" target="_self">Home</a></li>
           <li><a href="#project-section" target="_self">Projects</a></li>
           <li><a href="https://www.linkedin.com/in/hai-hoang-do-b65b18339/" target="_blank">LinkedIn</a></li>
           <li><a href="/Resume.pdf" target="_blank">CV</a></li>
         </ul>
       </div>
-      <section className='info'>
+      <section className='info' id='info-section'>
         <h1>Hai Hoang Do</h1>
         <p>Montreal, Canada<br/>haihoangdovn05@gmail.com</p>
         <h3>
@@ -95,7 +95,9 @@ function App() {
       <section className='projects' id='project-section'>
         <h2>PROJECTS</h2>
         <div className='project-block'>
-          <h4>Office Hour Scheduler</h4>
+          <h4>
+            <a href='https://github.com/H-Two/Appoint-Me' target="_blank">Office Hour Scheduler</a>
+          </h4>
           <div className='project-info'>
             <ul>
               <li>Full stack Python & Flask web application</li>
@@ -110,7 +112,9 @@ function App() {
           </div>
         </div>
         <div className='project-block'>
-          <h4>CO2 Emission & Natural Disasters Visualizer</h4>
+          <h4>
+            <a href='https://github.com/H-Two/CO2-and-Natural-Disaster-Visualizer' target="_blank">CO2 Emission & Natural Disasters Visualizer</a>
+          </h4>
           <div className='project-info'>
             <ul>
               <li>Full stack React web application</li>
