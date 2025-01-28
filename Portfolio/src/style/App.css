@@ -17,29 +17,35 @@ body {
 }
 
 .nav-bar {
+  position: fixed;
+  top: 0;
   width: 100%;
+  z-index: 1000;
+  background: linear-gradient(180deg, rgb(4, 3, 34), rgba(255, 255, 255, 0));
+  padding: 10px;  
 }
 
 .nav-bar ul{
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
   list-style-type: none;
-  margin: 0;
   padding: 0;
 }
 
 .nav-bar ul li{
-  display: inline;
-  float: left;
+  width: 100%;
+  font-size: 1.3em;
 }
 
-.skills {
+.skills, .projects, .experience, .education{
   width: 70%;
   margin: 10px;
-  padding: 0 0 5px 0;
+  padding: 10px;
   border-radius: 25px;
-  background-color: rgb(16, 39, 143);
-  border: 3px solid rgb(0, 110, 255);
+  background: linear-gradient(45deg, rgb(18, 18, 161), rgb(97, 9, 9));
+  border: 3px solid rgb(0, 88, 202);
 }
 
 .skill-container {
@@ -50,53 +56,157 @@ body {
   margin: 10px;
 }
 
-.skill-block {
-  padding: 2px;
-  border-radius: 8px;
-  background-color: #3351fd;
-  text-align: center;
-  min-width: 90px;
-}
-
-.experience {
-  width: 70%;
-  margin: 10px;
-  padding: 0 0 5px 0;
-  border-radius: 25px;
-  background-color: rgb(16, 39, 143);
-  border: 3px solid rgb(0, 110, 255);
-}
-
 .experience li {
   list-style-type: none;
 }
 
-.projects {
-  width: 70%;
-  margin: 10px;
-  padding: 0 0 5px 0;
-  border-radius: 25px;
-  background-color: rgb(16, 39, 143);
-  border: 2px solid rgb(0, 110, 255);
+.education-block {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.education-block h4 {
+  text-align: center;
+}
+
+.education-block img {
+  max-width: 50%;
+  height: auto;
+  object-fit: contain;
+  border: 3px #1a37df solid;
+  border-radius: 5px 30px 5px 30px;
 }
 
 .project-block {
   width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
+  height: 350px;
 }
 
 .project-info {
   display: flex;
-  gap: 10px;
-  align-items: center;
   text-align: left;
 }
 
-.project-info img {
-  max-width: 50%;
-  height: auto;
-  object-fit: contain;
-  border: 3px rgb(107, 167, 247) solid;
+.project-info ul {
+  flex: 1;
+}
+
+/* Skill blocks animation */
+
+.skill-block {
+  padding: 15px;
+  border: 3px #1a37df solid;
+  border-radius: 8px;
+  background: linear-gradient(45deg, rgb(32, 49, 124), rgb(0, 0, 151));
+  text-align: center;
+  min-width: 90px;
+  box-shadow: 0 4px 6px rgb(0, 0, 0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-block h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.skill-block:hover {
+  transform: scale(1.5) rotate(-5deg);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Experience display animation */
+
+.experience-block {
+  padding: 10px;
+  perspective: 1000px;
+}
+
+.experience-block img{
+  width: 50%;
+  border: 3px #1a37df solid;
   border-radius: 30px 5px 30px 5px;
+}
+
+.flip-card {
+  width: 100%;
+  height: 200px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flip-card-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Project display flip animation */
+
+.project-image {
+  flex: 1;
+  position: relative;
+  width: 70%;
+  padding: 10px;
+  perspective: 1000px;
+}
+
+.project-image img {
+  position: absolute;
+  object-fit: cover;
+  max-width: 90%;
+  border: 3px #1a37df solid;
+  border-radius: 30px 5px 30px 5px;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+}
+
+.project-image .front-image {
+  transform: rotateY(0deg);
+}
+
+.project-image .back-image {
+  transform: rotateY(180deg);
+}
+
+.project-image:hover .front-image {
+  transform: rotateY(-180deg);
+}
+
+.project-image:hover .back-image {
+  transform: rotateY(0deg);
 }
