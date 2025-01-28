@@ -74,13 +74,22 @@ function App() {
       <section className='experience'>
         <h2>EXPERIENCE</h2>
         <div className='experience-block'>
-          <h4>Computer Service Technician</h4>
-          <h4>Canada Computers</h4>
-          <ul>
-            <li>Build, maintain, and conduct repairs computer systems and related products</li>
-            <li>Install and configure software, hardware, drivers and BIOS on machines</li>
-            <li>Troubleshoot and locate root cause of problems in order to provide technical support</li>
-          </ul>
+          <div className='flip-card'>
+            <div className='flip-card-inner'>
+              <div className='flip-card-front'>
+                <h4>Computer Service Technician</h4>
+                <h4>Canada Computers</h4>
+                <ul>
+                  <li>Build, maintain, and conduct repairs computer systems and related products</li>
+                  <li>Install and configure software, hardware, drivers and BIOS on machines</li>
+                  <li>Troubleshoot and locate root cause of problems in order to provide technical support</li>
+                </ul>
+              </div>
+              <div className='flip-card-back'>
+                <img src='/cc-banner.svg' alt='CC banner' />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section className='projects' id='project-section'>

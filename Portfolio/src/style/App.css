@@ -97,7 +97,64 @@ body {
   flex: 1;
 }
 
-/* Emission display flip animation */
+/* Experience display animation */
+
+.experience-block {
+  padding: 10px;
+  perspective: 1000px;
+}
+
+.experience-block img{
+  width: 50%;
+  border: 3px #1a37df solid;
+  border-radius: 30px 5px 30px 5px;
+}
+
+.flip-card {
+  width: 100%;
+  height: 200px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flip-card-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Project display flip animation */
 
 .project-image {
   flex: 1;
