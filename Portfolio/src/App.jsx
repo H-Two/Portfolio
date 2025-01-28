@@ -73,13 +73,15 @@ function App() {
       </section>
       <section className='experience'>
         <h2>EXPERIENCE</h2>
-        <h4>Computer Service Technician</h4>
-        <h4>Canada Computers</h4>
-        <ul>
-          <li>Build, maintain, and conduct repairs computer systems and related products</li>
-          <li>Install and configure software, hardware, drivers and BIOS on machines</li>
-          <li>Troubleshoot and locate root cause of problems in order to provide technical support</li>
-        </ul>
+        <div className='experience-block'>
+          <h4>Computer Service Technician</h4>
+          <h4>Canada Computers</h4>
+          <ul>
+            <li>Build, maintain, and conduct repairs computer systems and related products</li>
+            <li>Install and configure software, hardware, drivers and BIOS on machines</li>
+            <li>Troubleshoot and locate root cause of problems in order to provide technical support</li>
+          </ul>
+        </div>
       </section>
       <section className='projects' id='project-section'>
         <h2>PROJECTS</h2>
