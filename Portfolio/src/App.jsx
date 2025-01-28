@@ -56,6 +56,21 @@ function App() {
           </div>
         </div>
       </section>
+      <section className='education'>
+        <h2>EDUCATION</h2>
+        <div className='education-block'>
+          <img src='/dawson-logo.svg'/>
+          <div className='education-info'>
+            <h4>Dawson College</h4>
+            <h4>Computer Science and Technology program</h4>
+            <ul>
+              <li>Create robust software systems including web and cloud-based applications</li>
+              <li>Use multiple programming languages in various operating systems</li>
+              <li>Develop analytical/problem-solving skills and logical thinking</li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <section className='experience'>
         <h2>EXPERIENCE</h2>
         <h4>Computer Service Technician</h4>
@@ -77,7 +92,10 @@ function App() {
               <li>Communication platform for managing appointments and reports</li>
               <li>Provides user authentication for different user type</li>
             </ul>
-            <img src='/scheduler.svg' alt='Scheduler'/>
+            <div className='project-image'>
+              <img src='/scheduler-1.svg' alt='Scheduler 1' className='front-image'/>
+              <img src='/scheduler-2.svg' alt='Scheduler 2' className='back-image'></img>
+            </div>
           </div>
         </div>
         <div className='project-block'>
@@ -89,7 +107,10 @@ function App() {
               <li>Displays CO2 emission and natural disasters datasets over maps and graphs</li>
               <li>Provides REST API for data retrieval hosted with Express.js</li>
             </ul>
-            <img src='/emission.svg' alt='Scheduler'/>
+            <div className='project-image'>
+              <img src='/emission.svg' alt='Emission' className='front-image'/>
+              <img src='/emission-dark.svg' alt='Emission dark mode' className='back-image'></img>
+            </div>
           </div>
         </div>
       </section>

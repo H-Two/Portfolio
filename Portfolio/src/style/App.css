@@ -33,13 +33,13 @@ body {
   float: left;
 }
 
-.skills, .projects, .experience{
+.skills, .projects, .experience, .education{
   width: 70%;
   margin: 10px;
   padding: 0 0 5px 0;
   border-radius: 25px;
-  background-color: rgb(16, 39, 143);
-  border: 3px solid rgb(0, 110, 255);
+  background: linear-gradient(45deg, rgb(18, 18, 161), rgb(121, 12, 12));
+  border: 3px solid rgb(0, 88, 202);
 }
 
 .skill-container {
@@ -52,8 +52,9 @@ body {
 
 .skill-block {
   padding: 2px;
+  border: 3px #1a37df solid;
   border-radius: 8px;
-  background-color: #3351fd;
+  background-color: #142aa3;
   text-align: center;
   min-width: 90px;
 }
@@ -62,23 +63,72 @@ body {
   list-style-type: none;
 }
 
-.project-block {
+.education-block {
+  display: flex;
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
+  text-align: left;
+}
+
+.education-block h4 {
+  text-align: center;
+}
+
+.education-block img {
+  max-width: 50%;
+  height: auto;
+  object-fit: contain;
+  border: 3px #1a37df solid;
+  border-radius: 30px 5px 30px 5px;
+}
+
+.project-block {
+  width: 100%;
+  height: 350px;
 }
 
 .project-info {
   display: flex;
-  gap: 10px;
-  align-items: center;
   text-align: left;
 }
 
-.project-info img {
-  max-width: 50%;
-  height: auto;
-  object-fit: contain;
-  border: 3px rgb(107, 167, 247) solid;
+.project-info ul {
+  flex: 1;
+}
+
+/* Emission display flip animation */
+
+.project-image {
+  flex: 1;
+  position: relative;
+  width: 70%;
+  padding: 10px;
+  perspective: 1000px;
+}
+
+.project-image img {
+  position: absolute;
+  object-fit: cover;
+  max-width: 90%;
+  border: 3px #1a37df solid;
   border-radius: 30px 5px 30px 5px;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+}
+
+.project-image .front-image {
+  transform: rotateY(0deg);
+}
+
+.project-image .back-image {
+  transform: rotateY(180deg);
+}
+
+.project-image:hover .front-image {
+  transform: rotateY(-180deg);
+}
+
+.project-image:hover .back-image {
+  transform: rotateY(0deg);
 }
